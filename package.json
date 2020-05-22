@@ -1,0 +1,16 @@
+{
+  "name": "discord-deduplicator",
+  "version": "1.0.0",
+  "description": "Auto rename image0 duscord files",
+  "main": "index.js",
+  "repository": "git@github.com:Starfox64/discord-deduplicator.git",
+  "author": "Starfox64",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "chokidar": "^3.4.0",
+    "exponential-backoff": "^3.0.0",
+    "node-windows": "^1.0.0-beta.1",
+    "then-fs": "^2.0.0"
+  }
+}
