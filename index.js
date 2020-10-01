@@ -17,7 +17,7 @@ function sleep(time) {
 }
 
 chokidar.watch(watchedPaths, {
-  ignoreInitial: true,
+  ignoreInitial: !['1', 'on', 'true'].includes(process.env.DISCORD_CHECK_STARTUP),
   depth: 0
 }).on('add', async filePath => {
   const pathData = path.parse(filePath);
